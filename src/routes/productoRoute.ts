@@ -6,9 +6,9 @@ const router = Router();
 
 router.get('/', getProductos);
 router.post('/', crearProductos);
-router.get('/id', getProductoById);
-router.put('/', actualizarProducto);
-router.delete('/', eliminarProducto);
-router.get('/', filtrarProducto);
+router.get('/:id', getProductoById);
+router.put('/:id', actualizarProducto);
+router.delete('/:id', eliminarProducto);
+router.get('/filtrar', filtrarProducto);
 
 export default router
